@@ -4,6 +4,7 @@ import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
 import Features from"components/features/DashedBorderSixFeatures"// "components/features/VerticalWithAlternateImageAndText.js";
 import Blog from "components/blogs/ThreeColSimpleWithImage.js";
 import Testimonial from "components/testimonials/TwoColumnWithImage.js";
+import Faq from "components/faqs/SingleCol"
 import ContactUsForm from "components/forms/SimpleContactUs.js";
 import Footer from "components/footers/SimpleFiveColumn.js";
 
@@ -11,8 +12,9 @@ export default () => (
     <AnimationRevealPage>
         <Hero />
         {/*<Features />*/}
-        <Blog />
-        {/*<Testimonial />*/}
+        {/*<Blog />*/}
+        <Testimonial />
+        <Faq/>
         {/*<ContactUsForm />*/}
         {/*<Footer />*/}
     </AnimationRevealPage>

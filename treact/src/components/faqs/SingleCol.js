@@ -10,7 +10,7 @@ import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chev
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
 
-const Subheading = tw(SubheadingBase)`mb-4 text-center`;
+const Subheading = tw(SubheadingBase)`mb-4 text-center text-red-500`;
 const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
@@ -30,38 +30,38 @@ const QuestionToggleIcon = motion(styled.span`
 const Answer = motion(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
-  ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-56 w-56 opacity-15 transform translate-x-2/3 -translate-y-12 text-teal-400`}
+  ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-56 w-56 opacity-15 transform translate-x-2/3 -translate-y-12 text-red-500`}
 `;
 const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
-  ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-64 w-64 opacity-15 transform -translate-x-2/3 text-primary-500`}
+  ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-64 w-64 opacity-15 transform -translate-x-2/3 text-red-500`}
 `;
 
 
 
 export default ({
-  subheading = "FAQS",
-  heading = "You have Questions ?",
-  description = "And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  subheading = "Текст",
+  heading = "Часто задаваемые вопросы",
+  description = "Текст",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "Вопрос",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "Ответ"
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "Вопрос",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Ответ"
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "Вопрос",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Ответ"
     },
     {
-      question: "Where can I reach you for support ?",
+      question: "Вопрос",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Ответ"
     }
   ]
 }) => {
