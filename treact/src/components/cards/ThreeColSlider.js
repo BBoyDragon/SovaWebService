@@ -17,7 +17,7 @@ const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm
 const Heading = tw(SectionHeading)``;
 const Controls = tw.div`flex items-center`;
 const ControlButton = styled(PrimaryButtonBase)`
-  ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2`}
+  ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2 bg-red-500`}
   svg {
     ${tw`w-6 h-6`}
   }
@@ -34,15 +34,15 @@ const CardSlider = styled(Slider)`
     ${tw`h-auto flex justify-center mb-1`}
   }
 `;
-const Card = tw.div`h-full flex! flex-col sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none`;
+const Card = tw.div`bg-red-500 bg-opacity-75 h-full flex! flex-col sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none`;
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`
 ]);
 
-const TextInfo = tw.div`py-6 sm:px-10 sm:py-6`;
+const TextInfo = tw.div`py-6 sm:px-10 sm:py-6 text-white`;
 const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
-const Title = tw.h5`text-2xl font-bold`;
+const Title = tw.h5`text-2xl font-bold text-white`;
 
 const RatingsInfo = styled.div`
   ${tw`flex items-center sm:ml-4 mt-2 sm:mt-0`}
@@ -52,17 +52,17 @@ const RatingsInfo = styled.div`
 `;
 const Rating = tw.span`ml-2 font-bold`;
 
-const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4`;
+const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4 text-white`;
 
-const SecondaryInfoContainer = tw.div`flex flex-col sm:flex-row mt-2 sm:mt-4`;
+const SecondaryInfoContainer = tw.div`flex flex-col sm:flex-row mt-2 sm:mt-4 text-white`;
 const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
 const IconContainer = styled.div`
-  ${tw`inline-block rounded-full p-2 bg-gray-700 text-gray-100`}
+  ${tw`inline-block rounded-full p-2 bg-white text-gray-900`}
   svg {
     ${tw`w-3 h-3`}
   }
 `;
-const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
+const Text = tw.div`ml-2 text-sm font-semibold text-gray-800 text-white`;
 
 const PrimaryButton = tw(PrimaryButtonBase)`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-4xl py-3 sm:py-6`;
 export default () => {
@@ -92,43 +92,30 @@ export default () => {
   const cards = [
     {
       imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Wyatt Residency",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Rome, Italy",
-      pricingText: "USD 39/Day",
-      rating: "4.8",
+      title: "Текст",
+      description: "Тееееееееееееекст",
+      locationText: "Тееееееееееееекст",
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Soho Paradise",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Ibiza, Spain",
-      pricingText: "USD 50/Day",
-      rating: 4.9,
+      imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
+      title: "Текст",
+      description: "Тееееееееееееекст",
+      locationText: "Тееееееееееееекст",
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Hotel Baja",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Palo Alto, CA",
-      pricingText: "USD 19/Day",
-      rating: "5.0",
+      imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
+      title: "Текст",
+      description: "Тееееееееееееекст",
+      locationText: "Тееееееееееееекст",
     },
-    {
-      imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Hudak Homes",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
-      rating: 4.5,
-    },
+
   ]
 
   return (
     <Container>
       <Content>
         <HeadingWithControl>
-          <Heading>Popular Hotels</Heading>
+          <Heading>Наши группы</Heading>
           <Controls>
             <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
             <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
@@ -141,28 +128,19 @@ export default () => {
               <TextInfo>
                 <TitleReviewContainer>
                   <Title>{card.title}</Title>
-                  <RatingsInfo>
-                    <StarIcon />
-                    <Rating>{card.rating}</Rating>
-                  </RatingsInfo>
+
                 </TitleReviewContainer>
                 <SecondaryInfoContainer>
                   <IconWithText>
                     <IconContainer>
-                      <LocationIcon />
+                      <LocationIcon  />
                     </IconContainer>
                     <Text>{card.locationText}</Text>
                   </IconWithText>
-                  <IconWithText>
-                    <IconContainer>
-                      <PriceIcon />
-                    </IconContainer>
-                    <Text>{card.pricingText}</Text>
-                  </IconWithText>
+
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton>Book Now</PrimaryButton>
             </Card>
           ))}
         </CardSlider>
